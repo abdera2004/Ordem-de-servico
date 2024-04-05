@@ -7,31 +7,52 @@
     <title>OS</title>
 </head>
 <body class="container">
-    <h1 style="text-align: center;">REGISTRAR</h1>
 
-    <div class="position-absolute top-50 start-50 translate-middle d-flex flex-row shadow-lg p-5 mb-5 rounded bg-info" style="border-radius: 15px; ">
-        <form method="POST" action="/cadastrar" class="">
-        @csrf
-            <b class="text-white">NOME: </b>
-            <input id="nome" class="form-control mb-1" type="text" name="nome" size="32cm" style=""></input>
-    
-            <b class="text-white">CPF: </b>
-            <input id="cpf" class="form-control mb-1" type="text" name="cpf" size="32cm" style=""></input>
+    <div class="container-fluid">
+        <div class="row">
 
-            <b class="text-white">TELEFONE: </b>
-            <input id="telefone" class="form-control mb-1" type="tel" name="telefone" size="32cm" style=""></input>
+    <!-- Primeira div -->
+    <div class="col-md-6 centralizado">
+        <div>
+            <b>REGISTRE O DEFEITO DE SEU APARELHO</b>
+        </div>
+    </div>
+    <!-- Segunda div -->
+    <div class="col-md-6 centralizado">
+        <div class="position-absolute d-flex flex-row shadow-lg p-5 mb-5 rounded" style="border-radius: 15px; ">
+            <form method="POST" action="/cadastrar" class="" >
+            @csrf
+                <h3>Preencha as informações</h3>
+                    <input placeholder="Nome" id="nome" class="form-control mb-3" type="text" name="nome" size="32cm" style=""></input>
+            
+                    <input placeholder="CPF" id="cpf" class="form-control mb-3" type="text" name="cpf" size="32cm" style=""></input>
 
-            <b class="text-white">MODELO: </b>
-            <input id="modelo" class="form-control mb-1" type="text" name="modelo" size="32cm" style=""></input>
-            
-            <b class="text-white">MARCA: </b>
-            <input id="marca" class="form-control mb-1" type="text" name="marca" size="32cm" style=""></input>
-            
-            <b class="text-white">DEFEITO: </b>
-            <input id="defeito" class="form-control mb-3" type="text" name="defeito" size="32cm" style=""></input>
-            
-            <input type="submit" name="registrar" value="Cadastrar" style="" class="btn btn-warning"></input>
-        </form>
+                    <input placeholder="Telefone" id="telefone" class="form-control mb-3" type="tel" name="telefone" size="32cm" style=""></input>
+
+                    <input placeholder="Modelo" id="modelo" class="form-control mb-3" type="text" name="modelo" size="32cm" style=""></input>
+                    
+                    <input placeholder="Marca" id="marca" class="form-control mb-3" type="text" name="marca" size="32cm" style=""></input>
+                    
+                    <input placeholder="Defeito" id="defeito" class="form-control mb-3" type="text" name="defeito" size="32cm" style=""></input>
+                    
+                    <input type="submit" name="registrar" value="Cadastrar" style="" class="btn btn-warning col-12"></input>
+            </form>
+        </div>
+    </div>
+        </div>
     </div>
 </body>
+
+<style>
+    .centralizado {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; 
+    }
+    #placeholder{
+        color: blue;
+    }
+</style>
+
 </html>
