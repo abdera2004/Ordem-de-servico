@@ -13,7 +13,10 @@
 
     <!-- Primeira div -->
     <div class="col-md-6 centralizado">
-        <div>
+        <div class="">
+
+            <img src="http://localhost:8000/img/consertar-celular.png" alt="Imagem">
+
             <b>REGISTRE O DEFEITO DE SEU APARELHO</b>
         </div>
     </div>
@@ -23,19 +26,19 @@
             <form method="POST" action="/cadastrar" class="" >
             @csrf
                 <h3>Preencha as informações</h3>
-                    <input placeholder="Nome" id="nome" class="form-control mb-3" type="text" name="nome" size="32cm" style=""></input>
+                    <input placeholder="Nome" id="nome" class="form-control mb-3" type="text" name="nome" size="32cm"></input>
             
-                    <input placeholder="CPF" id="cpf" class="form-control mb-3" type="text" name="cpf" size="32cm" style=""></input>
+                    <input placeholder="CPF" id="cpf" class="form-control mb-3" type="text" name="cpf" size="32cm"></input>
 
-                    <input placeholder="Telefone" id="telefone" class="form-control mb-3" type="tel" name="telefone" size="32cm" style=""></input>
+                    <input placeholder="Telefone" id="telefone" class="form-control mb-3" type="tel" name="telefone" size="32cm"></input>
 
-                    <input placeholder="Modelo" id="modelo" class="form-control mb-3" type="text" name="modelo" size="32cm" style=""></input>
+                    <input placeholder="Modelo" id="modelo" class="form-control mb-3" type="text" name="modelo" size="32cm"></input>
                     
-                    <input placeholder="Marca" id="marca" class="form-control mb-3" type="text" name="marca" size="32cm" style=""></input>
+                    <input placeholder="Marca" id="marca" class="form-control mb-3" type="text" name="marca" size="32cm"></input>
                     
-                    <input placeholder="Defeito" id="defeito" class="form-control mb-3" type="text" name="defeito" size="32cm" style=""></input>
+                    <input placeholder="Defeito" id="defeito" class="form-control mb-3" type="text" name="defeito" size="32cm"></input>
                     
-                    <input type="submit" name="registrar" value="Cadastrar" style="" class="btn btn-warning col-12"></input>
+                    <input type="submit" name="registrar" value="Cadastrar" class="btn btn-warning col-12"></input>
             </form>
         </div>
     </div>
