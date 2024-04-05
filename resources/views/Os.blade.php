@@ -13,16 +13,17 @@
 
     <!-- Primeira div -->
     <div class="col-md-6 centralizado">
-        <div class="">
-
-            <img src="http://localhost:8000/img/consertar-celular.png" alt="Imagem">
-
-            <b>REGISTRE O DEFEITO DE SEU APARELHO</b>
+        <div class="position-relative">
+            
+            <img src="{{ url('./assets/imagens/consertar-celular.png') }}" alt="Imagem" class="imagem img-fluid">
+            <div class="text-overlay">
+                <b>A melhor assistência técnica do país.</b>
+            </div>
         </div>
     </div>
     <!-- Segunda div -->
     <div class="col-md-6 centralizado">
-        <div class="position-absolute d-flex flex-row shadow-lg p-5 mb-5 rounded" style="border-radius: 15px; ">
+        <div class="position-absolute d-flex flex-row shadow-lg p-5 mb-5 rounded">
             <form method="POST" action="/cadastrar" class="" >
             @csrf
                 <h3>Preencha as informações</h3>
@@ -55,6 +56,23 @@
     }
     #placeholder{
         color: blue;
+    }
+    .imagem {
+        width: 1000px;
+        height: 500px;
+        border-radius: 10px;
+    }
+    .centralizado-texto {
+        justify-content: center;
+        align-items: center;
+    }
+    .text-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 15px;
     }
 </style>
 
