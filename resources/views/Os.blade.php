@@ -11,6 +11,7 @@
 
     <div class="position-absolute top-50 start-50 translate-middle d-flex flex-row shadow-lg p-5 mb-5 rounded bg-info" style="border-radius: 15px; ">
         <form method="POST" action="/cadastrar" class="">
+        @csrf
             <b class="text-white">NOME: </b>
             <input id="nome" class="form-control mb-1" type="text" name="nome" size="32cm" style=""></input>
     
