@@ -6,13 +6,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>OS</title>
 </head>
-<body class="container">
+
+<x-header />
+
+<body>
 
     <div class="container-fluid">
         <div class="row">
     <!-- Primeira div -->
     <div class="col-md-6 centralizado">
-        <div class="position-relative">
+        <div class="position-relative mx-5">
             <h2 class="text-white">A melhor assistência técnica do país.</h2>
             <h4 class="text-white">Crie um agendamento para o seu aparelho, e faremos a mágica.</h4>
         </div>
@@ -20,7 +23,7 @@
     
     <!-- Segunda div -->
     <div class="col-md-6 centralizado">
-        <div class="position-absolute d-flex flex-row shadow-lg p-4 mb-1 rounded" style="background-color: #EBA900;">
+        <div class="position-absolute d-flex flex-row shadow-lg p-4 mb-1 rounded" style="background-color: #EBA90090;">
             <form method="POST" action="/cadastrar" class="" >
             @csrf
                 <h3>Preencha as informações</h3>

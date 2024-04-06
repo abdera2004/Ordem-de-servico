@@ -7,22 +7,28 @@
     <title>Index</title>
 </head>
 
-<body class="container">
+<x-header />
 
-    <h1 style="text-align: center;">PAINEL DO ADMINISTRADOR</h1>
-    
-    <div class="position-absolute top-50 start-50 translate-middle d-flex flex-row shadow-lg p-5 mb-5 rounded bg-info" style=" border-radius: 15px;">
+<body class="bg-dark">
+
+    <div class="position-absolute top-50 start-50 translate-middle d-flex flex-row shadow-lg p-5 mb-5 rounded" style="background-color: #EBA900; border-radius: 15px;">
     <form>
-        <b class="text-white">LOGIN: </b>
-        <input class="form-control mb-1" type="text" name="nome" size="32cm" style=""></input>
+        <h3>Login</h3>
 
-        <b class="text-white">SENHA: </b>
-        <input class="form-control mb-3" type="password" name="senha" size="32cm" style=""></input>
+        <input placeholder="Nome" class="form-control mb-4 rounded-5" type="text" name="nome" size="32cm" style=""></input>
 
-        <input name="logar" type="submit" class="btn btn-warning">CONFIRMAR</input>
+        <input placeholder="Senha" class="form-control mb-4 rounded-5" type="password" name="senha" size="32cm" style=""></input>
+
+        <input name="logar" type="submit" class="btn btn-dark col-12 rounded-5"></input>
     </form>
 
     </div>
 </body>
+
+<style>
+
+body {
+    }
+</style>
 
 </html>
