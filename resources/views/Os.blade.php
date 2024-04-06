@@ -10,36 +10,54 @@
 
     <div class="container-fluid">
         <div class="row">
-
     <!-- Primeira div -->
     <div class="col-md-6 centralizado">
         <div class="position-relative">
-            
-            <img src="{{ url('./assets/imagens/consertar-celular.png') }}" alt="Imagem" class="imagem img-fluid">
-            <div class="text-overlay">
-                <b>A melhor assistência técnica do país.</b>
-            </div>
+            <h2 class="text-white">A melhor assistência técnica do país.</h2>
+            <h4 class="text-white">Crie um agendamento para o seu aparelho, e faremos a mágica.</h4>
         </div>
     </div>
+    
     <!-- Segunda div -->
     <div class="col-md-6 centralizado">
-        <div class="position-absolute d-flex flex-row shadow-lg p-5 mb-5 rounded">
+        <div class="position-absolute d-flex flex-row shadow-lg p-4 mb-1 rounded" style="background-color: #EBA900;">
             <form method="POST" action="/cadastrar" class="" >
             @csrf
                 <h3>Preencha as informações</h3>
-                    <input placeholder="Nome" id="nome" class="form-control mb-3" type="text" name="nome" size="32cm"></input>
-            
-                    <input placeholder="CPF" id="cpf" class="form-control mb-3" type="text" name="cpf" size="32cm"></input>
+                <div class="">
 
-                    <input placeholder="Telefone" id="telefone" class="form-control mb-3" type="tel" name="telefone" size="32cm"></input>
+                    <!--Input de nome -->
+                    <div class="input-wrapper mb-3">
+                        <input placeholder="Nome" id="nome" class="form-control mb-2 rounded-5 border-1 border-dark" type="text" name="nome" size="32cm"></input>
+                    </div>
+                    <!--Input de CPF -->
+                    <div class="input-wrapper mb-3">
 
-                    <input placeholder="Modelo" id="modelo" class="form-control mb-3" type="text" name="modelo" size="32cm"></input>
-                    
-                    <input placeholder="Marca" id="marca" class="form-control mb-3" type="text" name="marca" size="32cm"></input>
-                    
-                    <input placeholder="Defeito" id="defeito" class="form-control mb-3" type="text" name="defeito" size="32cm"></input>
-                    
-                    <input type="submit" name="registrar" value="Cadastrar" class="btn btn-warning col-12"></input>
+                        <input placeholder="CPF" id="cpf" class="form-control mb-2 rounded-5 border-1 border-dark" type="text" name="cpf" size="32cm"></input>
+                    </div>
+
+                    <!--Input de Telefone -->
+                    <div class="input-wrapper mb-3">
+
+                        <input placeholder="Telefone" id="telefone" class="form-control mb-2 rounded-5 border-1 border-dark" type="text" name="telefone" size="32cm"></input>
+                    </div>
+                    <!--Input de Modelo -->
+                    <div class="input-wrapper mb-3">
+
+                        <input placeholder="Modelo" id="modelo" class="form-control mb-2 rounded-5 border-1 border-dark" type="text" name="modelo" size="32cm"></input>
+                    </div>
+                    <!--Input de Marca -->
+                    <div class="input-wrapper mb-3">
+   
+                        <input placeholder="Marca" id="marca" class="form-control mb-2 rounded-5 border-1 border-dark" type="text" name="marca" size="32cm"></input>
+                    </div>
+                    <!--Input de Defeito -->
+                    <div class="input-wrapper mb-3">
+
+                        <input placeholder="Defeito" id="defeito" class="form-control mb-2 rounded-5 border-1 border-dark" type="text" name="defeito" size="32cm"></input>
+                    </div>      
+                    <input type="submit" name="registrar" value="Enviar" class="text-bold rounded-5 btn btn-dark col-12"></input>
+                </div>
             </form>
         </div>
     </div>
@@ -52,27 +70,26 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh; 
+      height: 100vh;
     }
     #placeholder{
         color: blue;
-    }
-    .imagem {
-        width: 1000px;
-        height: 500px;
-        border-radius: 10px;
     }
     .centralizado-texto {
         justify-content: center;
         align-items: center;
     }
-    .text-overlay {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-      font-size: 15px;
+    .input-wrapper-text {
+        background-color: transparent;
+        border-color: transparent; 
+    }
+    body {
+        background-image: url('./assets/imagens/consertar-celular.png');
+        background-position: center;
+      /* Define o tamanho da imagem de fundo */
+      background-size: cover;
+      /* Define que a imagem de fundo não se repita */
+      background-repeat: no-repeat;
     }
 </style>
 
